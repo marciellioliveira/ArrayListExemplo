@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
  */
 public class Principal extends javax.swing.JFrame {
 
-    ArrayList<String> palavra = new ArrayList<String>();
+    
     
     public Principal() {
         initComponents();
@@ -139,10 +139,13 @@ public class Principal extends javax.swing.JFrame {
              
         } else {
             
+           ArrayList<String> palavra = new ArrayList<String>();  
            palavra.add(jTextFieldAreaDeInteresse.getText());
            
            for(String palavrasAdicionadas : palavra) {   
-            
+               
+
+               
             
             jTextAreaMostrarAreaDeInteresse.append(palavrasAdicionadas+", ");
             System.out.print(""+palavrasAdicionadas+", ");  
